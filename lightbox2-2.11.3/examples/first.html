@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lightbox2-2.11.3/dist/css/lightbox.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/lightbox2-2.11.3/dist/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>食全食美</h3>
+        <div class="container">
+            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                data-lightbox="example-1"><img class="example-image"
+                    src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
+            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg"
+                data-lightbox="example-2" data-title="Optional caption."><img class="example-image"
+                    src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="image-1" /></a>
+        </div>
+
+        <hr />
+
+        <h3>各式風味</h3>
+        <div>
+            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg"
+                    alt="" /></a>
+            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg"
+                data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img
+                    class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg"
+                    alt="" /></a>
+            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg"
+                data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img
+                    class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg"
+                    alt="" /></a>
+            <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg"
+                data-lightbox="example-set"
+                data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image"
+                    src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <p>
+            For more information, visit <a
+                href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a>
+        </p>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">中餐
+                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+            </div>
+            <div class="swiper-slide">西餐
+                <img src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+            </div>
+            <div class="swiper-slide">下午茶
+                <img src="https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+            </div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+    </div>
+
+
+
+
+    <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            speed: 1000,
+            loop: true,
+            effect: 'coverflow',
+            autoplay: {
+                delay: 2000,
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+    </script>
+</body>
+
+</html>
